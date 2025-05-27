@@ -298,25 +298,25 @@ function createEmptyOffer() {
         details: [
             {
                 title: "",
-                revisions: null,
-                delivery_time_in_days: null,
-                price: null,
+                revisions: 1,
+                delivery_time_in_days: 1,
+                price: 0,
                 features: [],
                 offer_type: "basic"
             },
             {
                 title: "",
-                revisions: null,
-                delivery_time_in_days: null,
-                price: null,
+                revisions: 1,
+                delivery_time_in_days: 1,
+                price: 0,
                 features: [],
                 offer_type: "standard"
             },
             {
                 title: "",
-                revisions: null,
-                delivery_time_in_days: null,
-                price: null,
+                revisions: 1,
+                delivery_time_in_days: 1,
+                price: 0,
                 features: [],
                 offer_type: "premium"
             }
