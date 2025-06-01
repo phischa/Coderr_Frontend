@@ -8,7 +8,7 @@ async function logIn(formData) {
     if (!response.ok) {
         showFormErrors(['error_pw']);
     } else {
-        setAuthCredentials(response.data.token, response.data.user_id, response.data.username)
+        setAuthCredentials(response.data.token, response.data.user_id, response.data.username, response.data.type)
         window.location.href = "./offer_list.html"
     }
 }
@@ -19,7 +19,7 @@ async function registration(data) {
         let errorArr = extractErrorMessages(response.data)
         showToastMessage(true, errorArr)
     } else {
-        setAuthCredentials(response.data.token, response.data.user_id, response.data.username)
+        setAuthCredentials(response.data.token, response.data.user_id, response.data.username, response.data.type)
         window.location.href = "./offer_list.html"
     }
 }
